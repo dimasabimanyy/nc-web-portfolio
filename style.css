@@ -22,6 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,6 +51,10 @@ input,
 textarea,
 li {
   color: var(--secondaryTextColor);
+}
+
+a {
+  text-decoration: none;
 }
 
 .main-container {
@@ -138,7 +143,6 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none;
   color: var(--primaryTextColor);
 }
 
@@ -427,7 +431,6 @@ footer {
 }
 
 .footer-icons a {
-  text-decoration: none;
   margin: 0 0.5rem;
 }
 
