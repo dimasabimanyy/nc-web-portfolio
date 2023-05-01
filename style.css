@@ -59,7 +59,7 @@ li {
 
 @media screen and (max-width: 1200px) {
   .main-container {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -104,6 +104,14 @@ li {
   top: 50%;
 }
 
+/* Layouts */
+.grid-3 {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
 /* Logo and Navigation Menu */
 .logo {
   display: flex;
@@ -139,6 +147,7 @@ nav ul li a {
   height: 720px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* We're not going to use automatic template columns, because we need to know when the columns is go below. So we can exchange the order of the element */
   align-items: center;
 }
 
@@ -148,12 +157,12 @@ nav ul li a {
   margin: 0.5rem 0 1rem;
 }
 
-.right-hero {
+.hero-right {
   display: flex;
   justify-content: center;
 }
 
-.right-hero img {
+.hero-right img {
   width: 90%;
 }
 
@@ -169,12 +178,6 @@ nav ul li a {
 
 .services-title {
   text-align: center;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
 }
 
 .service {
@@ -287,7 +290,8 @@ nav ul li a {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 40% 60%;
+  /* grid-template-columns: 40% 60%; */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3rem;
 }
 
@@ -345,7 +349,8 @@ nav ul li a {
 
 .contact {
   display: grid;
-  grid-template-columns: 55% 45%;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3rem;
 }
 
@@ -367,6 +372,12 @@ nav ul li a {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #9d9fa1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #7d7d7d;
 }
 
 .btn-submit {

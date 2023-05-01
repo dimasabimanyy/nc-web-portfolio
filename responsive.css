@@ -1,0 +1,86 @@
+/* Small (smaller than 640px)
+Medium (641px to 1007px)
+Large (1008px and larger) */
+
+/* Tablet Size */
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .grid-3 {
+    gap: 1rem;
+  }
+
+  .skills-right ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Breakpoint */
+@media screen and (max-width: 825px) {
+  :root {
+    --sectionPadding: 4rem 0;
+  }
+
+  /* Titles */
+  .section-title {
+    font-size: 1.6rem;
+    margin: 0.6rem 0 2.5rem;
+  }
+
+  .pre-title {
+    font-size: 0.8rem;
+  }
+
+  /* Hero Section */
+  #hero {
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+
+  .hero-right {
+    order: -1;
+  }
+
+  .hero-right img {
+    width: 70%;
+  }
+
+  .hero-left {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+
+  .hero-left .pre-title {
+    margin: 0 auto;
+  }
+
+  .hero-name {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Skills Section */
+  .skills-grid {
+    gap: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 0;
+  }
+}
+
+/* Mobile Size */
+@media screen and (max-width: 640px) {
+  /* Titles */
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .pre-title {
+    font-size: 0.7rem;
+  }
+}
