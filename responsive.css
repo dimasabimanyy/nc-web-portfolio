@@ -20,6 +20,39 @@ Large (1008px and larger) */
 
 /* Breakpoint */
 @media screen and (max-width: 825px) {
+  /* Navigation */
+  nav {
+    position: fixed;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    background: var(--primaryBackgroundColor);
+    border-left: 1px solid var(--borderColor);
+    z-index: 9;
+    transform: translateX(100%);
+    transition: 0.2s ease-in-out;
+  }
+
+  nav ul {
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-active {
+    transform: translateX(0);
+  }
+
+  /* Burger */
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* End Navigation */
   :root {
     --sectionPadding: 4rem 0;
   }

@@ -146,6 +146,36 @@ nav ul li a {
   color: var(--primaryTextColor);
 }
 
+/* Burger */
+.burger {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 33px;
+  right: 35px;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+
+.toggle-burger .line-1 {
+  transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.toggle-burger .line-2 {
+  opacity: 0;
+}
+
+.toggle-burger .line-3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
 /* Hero Section */
 #hero {
   height: 720px;
