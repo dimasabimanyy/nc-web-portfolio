@@ -12,6 +12,7 @@
   --thirdBackgroundColor: #f5f3fe;
 
   --primaryIconColor: #7e74f1;
+  --primaryIconColorHover: #5d51e8;
 
   --sectionPadding: 6rem 0;
 
@@ -125,6 +126,10 @@ a {
   font-size: 2rem;
 }
 
+.logo a {
+  color: var(--primaryTextColor);
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -189,6 +194,10 @@ nav ul li a {
   font-size: 3rem;
   font-weight: 700;
   margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+  color: var(--primaryIconColor) !important;
 }
 
 .hero-right {
@@ -421,6 +430,12 @@ nav ul li a {
   color: #fff;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: var(--primaryIconColorHover);
 }
 
 /* Contact Section - Right Side */
