@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
-  --primaryTextColor: #232e35;
-  --secondaryTextColor: #656d72;
+  --primaryTextColor: #232e35; /* Untuk title atau judul */
+  --secondaryTextColor: #656d72; /* Untuk text biasa seperti paragraph contohnya */
 
   --borderColor: #f1f1f1;
-  --lineColor: #d9d9d9;
+  --lineColor: #d9d9d9; /* untuk line di pre-title */
 
   --primaryBackgroundColor: #fff;
-  --secondaryBackground: #fbfbfb;
+  --secondaryBackgroundColor: #fbfbfb;
   --thirdBackgroundColor: #f5f3fe;
 
   --primaryIconColor: #7e74f1;
@@ -30,11 +30,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.9rem;
-}
-
 h1,
 h2,
 h3,
@@ -43,6 +38,11 @@ h5,
 h6,
 strong {
   color: var(--primaryTextColor);
+}
+
+p {
+  font-size: 1rem; /* 16 px */
+  line-height: 1.9rem; /*30.4 px */
 }
 
 p,
@@ -57,6 +57,8 @@ li {
 a {
   text-decoration: none;
 }
+
+/* End Preparation */
 
 .main-container {
   width: 1200px;
@@ -118,18 +120,7 @@ a {
   gap: 3rem;
 }
 
-/* Logo and Navigation Menu */
-.logo {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.logo a {
-  color: var(--primaryTextColor);
-}
-
+/* --- Logo and Navigation Menu --- */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -142,6 +133,19 @@ nav ul {
   gap: 3rem;
 }
 
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.logo a {
+  color: var(--primaryTextColor);
+}
+
+/* Navigation Menu */
 nav ul li {
   display: flex;
   align-items: center;
@@ -151,7 +155,7 @@ nav ul li a {
   color: var(--primaryTextColor);
 }
 
-/* Burger */
+/* Burger - Save for later on video */
 .burger {
   display: none;
   z-index: 99;
@@ -211,7 +215,7 @@ nav ul li a {
 
 /* Services Section */
 #services {
-  background-color: var(--secondaryBackground);
+  background-color: var(--secondaryBackgroundColor);
   padding: var(--sectionPadding);
 }
 
@@ -328,7 +332,7 @@ nav ul li a {
 /* Skills and Education */
 #skills {
   padding: var(--sectionPadding);
-  background: var(--secondaryBackground);
+  background: var(--secondaryBackgroundColor);
 }
 
 .skills-grid {
@@ -406,7 +410,7 @@ nav ul li a {
   width: 100%;
   padding: 0.75rem 1.3rem;
   font-family: "Roboto", sans-serif;
-  background: var(--secondaryBackground);
+  background: var(--secondaryBackgroundColor);
   border: 1px solid var(--borderColor);
   border-radius: 3px;
   resize: none;
@@ -467,7 +471,7 @@ nav ul li a {
 /* Footer Section */
 footer {
   padding: 4rem 0;
-  background: var(--secondaryBackground);
+  background: var(--secondaryBackgroundColor);
   text-align: center;
 }
 
