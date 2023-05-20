@@ -1,8 +1,3 @@
-/* Small (smaller than 640px)
-Medium (641px to 1007px)
-Large (1008px and larger) */
-
-/* Tablet Size */
 @media screen and (max-width: 1000px) {
   p {
     font-size: 0.9rem;
@@ -18,8 +13,25 @@ Large (1008px and larger) */
   }
 }
 
-/* Breakpoint */
 @media screen and (max-width: 825px) {
+  /* Burger */
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .toggle-burger .line-1 {
+    transform: rotate(-45deg) translate(-5px, 7px);
+  }
+
+  .toggle-burger .line-2 {
+    opacity: 0;
+  }
+
+  .toggle-burger .line-3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
   /* Navigation */
   nav {
     position: fixed;
@@ -45,14 +57,8 @@ Large (1008px and larger) */
   .nav-active {
     transform: translateX(0);
   }
+  /* End of Navigation */
 
-  /* Burger */
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-
-  /* End Navigation */
   :root {
     --sectionPadding: 4rem 0;
   }
